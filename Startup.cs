@@ -41,8 +41,16 @@ namespace lepweb
             }
 
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
+            //for static files
+            //app.UseStaticFiles();
 
+            //app.UseIISPlatformHandler();
+            app.UseDeveloperExceptionPage();
+
+            //app.UseRuntimeInfoPage();
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+            //for static files - end
             app.UseRouting();
 
             app.UseAuthorization();
