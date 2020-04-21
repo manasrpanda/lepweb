@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  lepweb:
+    image: ${DOCKER_REGISTRY-}lepweb
+    build:
+      context: .
+      dockerfile: ./Dockerfile
